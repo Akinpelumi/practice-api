@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import { AuthController } from '../controllers';
-import { AuthMiddleware } from '../middleware';
-import { UserMiddleware } from '../middleware';
+import { AuthMiddleware, UserMiddleware } from '../middleware';
 
-const { signup, signin  } = AuthController;
+
+const { signup, signin } = AuthController;
 const { validateLoginInfo } = AuthMiddleware;
 const { signUpValidator, signUpEmailValidator } = UserMiddleware;
 

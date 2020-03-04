@@ -3,6 +3,6 @@ import postQueries from './post';
 
 
 export {
-    userQueries,
-    postQueries
-} 
+  userQueries,
+  postQueries
+};

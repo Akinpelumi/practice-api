@@ -1,17 +1,19 @@
-var promise = require('bluebird');
-var pg = require('pg-promise')
 import config from '../config';
-import { userQueries, postQueries } from './queries'
+
+import { userQueries, postQueries } from './queries';
+
+const promise = require('bluebird');
+const pg = require('pg-promise');
 
 
-var options = {
-    promiseLib: promise
-}
-var pgp = pg(options);
+const options = {
+  promiseLib: promise
+};
+const pgp = pg(options);
 const db = pgp(config.DATABASE_URL);
 
 export {
-    db,
-    userQueries,
-    postQueries
-}
+  db,
+  userQueries,
+  postQueries
+};

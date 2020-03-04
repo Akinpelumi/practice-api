@@ -3,7 +3,7 @@ import PostController from './post';
 import AuthController from './auth';
 
 export {
-    UserController,
-    PostController,
-    AuthController
-}
+  UserController,
+  PostController,
+  AuthController
+};

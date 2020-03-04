@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users
 );
 `;
 
-const createPostTable =`
+const createPostTable = `
 CREATE TABLE IF NOT EXISTS posts
 (
     id SERIAL NOT NULL,
@@ -27,8 +27,8 @@ CREATE TABLE IF NOT EXISTS posts
 );
 `;
 
-const up = (...queries) => db.query(queries.reduce((prev,curr)=> prev + curr));
+const up = (...queries) => db.query(queries.reduce((prev, curr) => prev + curr));
 
-export { 
-    up, createUserTable, createPostTable 
+export {
+  up, createUserTable, createPostTable
 };

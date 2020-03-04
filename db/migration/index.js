@@ -1,7 +1,7 @@
 export {
-    up, createUserTable, createPostTable
+  up, createUserTable, createPostTable
 } from './up';
 
 export {
-    down, dropPostTable, dropUserTable
+  down, dropPostTable, dropUserTable
 } from './down';
