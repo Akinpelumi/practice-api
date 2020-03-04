@@ -30,7 +30,7 @@ export default class AuthController{
                 message: 'New user has been created',
                 data: {id, ...user, token}
             });
-        }catch(e){
+        }catch(e) {
             console.log(e);
             const err = new Error('Error creating new user');
             next(err);
