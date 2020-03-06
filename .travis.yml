@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 'stable'
+  - 'stable' 
 
 services:
   - postgresql
@@ -16,3 +16,6 @@ before_script:
 script:
   - npm ci
   - npm test
+
+after_success:
+  - npm run coverage

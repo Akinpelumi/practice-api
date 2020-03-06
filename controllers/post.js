@@ -12,6 +12,7 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostControllers
  */
@@ -37,6 +38,7 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostController
  */
@@ -60,6 +62,7 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostController
  */
@@ -82,6 +85,7 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostController
  */
@@ -104,11 +108,13 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostController
  */
   static async updateOnePost(req, res, next) {
     try {
+      // eslint-disable-next-line no-unused-vars
       const data = await PostService.updatePost(req.body.heading, req.body.post, req.params.id);
       res.status(201).json({
         status: 'Success',
@@ -125,11 +131,13 @@ export default class PostController {
  * @static
  * @param {Request} req - The request from the endpoint.
  * @param {Response} res - The response returned by the method.
+ * @param {Next} next
  * @returns { JSON } A JSON response containing the details of the answers.
  * @memberof PostController
  */
   static async deletePost(req, res, next) {
     try {
+      // eslint-disable-next-line no-unused-vars
       const data = await PostService.deleteOnePost(req.params.id);
       res.status(200).json({
         status: 'Success',

@@ -17,7 +17,7 @@ class Helper {
    * @memberof Helper
    * @returns {Promise<string>} - encrypted password
    */
-  static async hashPassword(plainPassword) {
+  static hashPassword(plainPassword) {
     return bcrypt.hash(plainPassword, 10);
   }
 
@@ -30,7 +30,7 @@ class Helper {
    * @returns {Promise<boolean>} - returns a true if the plain password sent tallies
    * the hashed in the DB and a false if it does not tally
    */
-  static async comparePassword(plainPassword, hash) {
+  static comparePassword(plainPassword, hash) {
     return bcrypt.compare(plainPassword, hash);
   }
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import Joi from '@hapi/joi';
 
 const PostSchema = Joi.object({

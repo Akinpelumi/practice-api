@@ -1,6 +1,6 @@
+/* eslint-disable no-useless-escape */
 import request from 'supertest';
 import expect from 'expect';
-import { up, down, createPostTable, createUserTable, dropUserTable, dropPostTable } from '../../db/migration';
 import app from '../../app';
 
 

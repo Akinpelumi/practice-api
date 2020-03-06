@@ -23,7 +23,7 @@
         "consistent-return": 0,
         "camelcase":0,
         "no-param-reassign": 0,
-        "no-shadow": ["error", { "allow": ["req", "res", "err","next"] }],
+        "no-shadow": ["error", { "allow": ["req", "res", "err", "next"] }],
         "linebreak-style": 0,
         "no-underscore-dangle": 0,
         "object-curly-newline": 0,
